@@ -1,0 +1,52 @@
+/*NAVBAR*/
+nav {
+    width: 100%;
+    padding: 10px;
+    padding-right: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    /* Position the navbar at the top of the headerDiv */
+    left: 0;
+    /* Align the navbar with the left edge of the headerDiv */
+    box-sizing: border-box;
+    z-index: 3;
+    /* Ensure the navbar is on top of the overlay */
+}
+
+img {
+    width: 70px;
+}
+
+.navADiv {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navADiv>a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.navADiv>button {
+    width: 84px;
+    height: 29px;
+    font-size: 14px;
+    border-radius: 7px;
+}
+
+.navADiv>.loginBtn {
+    border: none;
+    background-color: #7D0A0A;
+    color: white;
+}
+
+.navADiv>.signupBtn {
+    border: 2px solid white;
+    background: none;
+    color: white;
+}

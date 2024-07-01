@@ -1,9 +1,9 @@
 import React from "react"
-import ReactDOM from "react-dom"
 import HomePage from "./pages/Homepage/Homepage"
+import SignUp from "./pages/Sign-Up(temp)/SignUp"
 
 export default function App() {
   return (
-    <HomePage />
+    <SignUp />
   )
 }
