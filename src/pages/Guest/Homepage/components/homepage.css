@@ -4,59 +4,6 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-/*NAVBAR*/
-nav {
-    width: 100%;
-    padding: 10px;
-    padding-right: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    top: 0;
-    /* Position the navbar at the top of the headerDiv */
-    left: 0;
-    /* Align the navbar with the left edge of the headerDiv */
-    box-sizing: border-box;
-    z-index: 3;
-    /* Ensure the navbar is on top of the overlay */
-}
-
-img {
-    width: 70px;
-}
-
-.navADiv {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.navADiv>a {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-}
-
-.navADiv>button {
-    width: 84px;
-    height: 29px;
-    font-size: 14px;
-    border-radius: 7px;
-}
-
-.navADiv>.loginBtn {
-    border: none;
-    background-color: #7D0A0A;
-    color: white;
-}
-
-.navADiv>.signupBtn {
-    border: 2px solid white;
-    background: none;
-    color: white;
-}
-
 /*HEADER*/
 .headerDiv {
     position: relative;
@@ -67,6 +14,8 @@ img {
     height: 600px;
     overflow: hidden;
     /* Ensure the pseudo-element is contained within the div */
+    background-size: cover;
+    background-position: center;
 }
 
 .headerDiv::before {
@@ -162,57 +111,4 @@ img {
 
 .bodyContentDescription.seeMoreBtn {
     float: right;
-}
-
-/*FOOTER*/
-.footerDiv {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #7D0A0A;
-    padding: 2% 5%;
-}
-
-.footerLeftContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-}
-
-.footerLeftContent>h2 {
-    margin-bottom: 0;
-}
-
-.footerMiddleContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-}
-
-.footerMiddleContent>a {
-    color: white;
-    text-decoration: none;
-    margin-bottom: 10%;
-}
-
-.footerRightContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-}
-
-.footerRightContent>div {
-    border-bottom: 1px solid white;
-    width: fit-content;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    padding-bottom: 10%;
-}
-
-.footerRightContent>div>a>img {
-    width: 30px;
 }
