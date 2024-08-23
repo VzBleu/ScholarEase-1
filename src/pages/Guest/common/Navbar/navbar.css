@@ -17,6 +17,7 @@ nav {
 }
 
 img {
+    margin-left: 6%;
     width: 70px;
 }
 
@@ -26,7 +27,7 @@ img {
     gap: 15px;
 }
 
-.navADiv>a {
+.navADiv>span {
     text-decoration: none;
     color: white;
     font-size: 14px;

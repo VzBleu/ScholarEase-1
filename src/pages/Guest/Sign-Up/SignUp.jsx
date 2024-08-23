@@ -1,7 +1,7 @@
 import React from "react"
-import Navbar from "../../components/Navbar/navbar"
-import PopUp from "./components/pop-up"
-import Footer from "../../components/Footer/footer"
+import Navbar from "../common/Navbar/navbar"
+import PopUp from "./components/signupbox"
+import Footer from "../common/Footer/footer"
 import "./components/signup.css"
 
 export default function SignUp() {
@@ -10,8 +10,6 @@ export default function SignUp() {
             <Navbar />
             <div className="popUpSuperDiv">
                 <PopUp />
-            </div>
-            <div className="signUpContentDiv">
             </div>
             <Footer />
         </div>

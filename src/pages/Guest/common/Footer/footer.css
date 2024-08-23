@@ -4,6 +4,7 @@
     justify-content: space-between;
     background-color: #7D0A0A;
     padding: 2% 5%;
+    z-index: 3;
 }
 
 .footerLeftContent {

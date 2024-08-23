@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 export default function PopUp() {
     return (
@@ -7,19 +8,9 @@ export default function PopUp() {
             <form>
                 <div>
                     <p className="p1">Welcome!</p>
-                    <p className="p2">Sign up For An Account</p>
+                    <p className="p2">Sign into your Account</p>
                 </div>
                 <div className="formContent">
-                    <div className="fnlnDiv">
-                        <div className="d1">
-                            <label htmlFor="signUpFirstName">First Name</label>
-                            <input type="text" name="signUpFirstName" id="signUpFirstName" />
-                        </div>
-                        <div className="d2">
-                            <label htmlFor="signUpLastName">Last Name</label>
-                            <input type="text" name="signUpLastName" id="signUpLastName" />
-                        </div>
-                    </div>
                     <div className="emailDiv">
                         <label htmlFor="signUpEmailAd">Email Address</label>
                         <input type="text" name="signUpEmailAd" id="signUpEmailAd" />
@@ -29,18 +20,14 @@ export default function PopUp() {
                             <label htmlFor="signUpPassword">Password</label>
                             <input type="text" name="signUpPassword" id="signUpPassword" />
                         </div>
-                        <div className="d2">
-                            <label htmlFor="signUpConfirmPass">Confirm Password</label>
-                            <input type="text" name="signUpConfirmPass" id="signUpConfirmPass" />
-                        </div>
                     </div>
                     <div className="termsDiv">
                         <input type="checkbox" name="agree" id="agree" />
                         <label htmlFor="agree">I agree to the <a href="">Terms and Conditions</a></label><br />
                     </div>
-                    <input className="submit" type="submit" name="submit" id="submit" />
+                    <button className="submit" name="submit" id="submit"><Link className="removeDeco" to="/login">Login</Link></button>
                 </div>
-                <p className="signInP">Already have an account ? <a href="">Sign in</a></p>
+                <p className="signInP">Don't have an account? <Link className="removeDeco" to="/signup">Sign-up</Link></p>
             </form>
         </div>
     )

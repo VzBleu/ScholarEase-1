@@ -2,33 +2,6 @@ body {
     margin: 0;
 }
 
-.signUpContentDiv {
-    position: relative;
-    /* Ensure the headerDiv is the reference for absolute positioning within it */
-    background-image: url(https://res.cloudinary.com/ddiyjqv0u/image/upload/v1719741298/173963738_1113147162525626_3755736095064468466_n_1_epcbrr.png);
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    height: 1080px;
-    overflow: hidden;
-    /* Ensure the pseudo-element is contained within the div */
-    background-size: cover;
-    background-position: center;
-}
-
-.signUpContentDiv::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Adjust the color and opacity as needed */
-    z-index: 1;
-    /* Ensure the overlay is on top of the background image */
-    pointer-events: none;
-    /* Prevent the overlay from capturing any mouse events */
-}
 
 .signUpContentDiv>* {
     position: relative;
@@ -37,21 +10,17 @@ body {
 }
 
 .popUpSuperDiv {
-    position: fixed;
     display: flex;
-    width: 1920px;
-    height: 1080px;
+    height: 800px;
     align-items: center;
     justify-content: center;
-    z-index: 3;
 }
 
 .popUpDiv {
     border-radius: 15px;
-    height: 643px;
-    width: 1230px;
+    height: 500px;
+    width: 800px;
     position: absolute;
-    z-index: 3;
     background: linear-gradient(to right,
             rgba(125, 10, 10, .8),
             /* Red with 80% transparency */
@@ -61,13 +30,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3%;
+    padding: 0 2%;
     box-sizing: border-box;
 }
 
 .popUpDiv>img {
-    margin-left: 5%;
-    width: 30%;
+    margin-left: 1%;
+    width: 20%;
 }
 
 .popUpDiv>form {
@@ -76,14 +45,14 @@ body {
 }
 
 .popUpDiv>form>div>.p1 {
-    font-size: 35px;
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 0;
     color: white;
 }
 
 .popUpDiv>form>div>.p2 {
-    font-size: 20px;
+    font-size: 1.1rem;
     margin-top: 0;
     color: white;
 }
@@ -150,7 +119,7 @@ body {
 }
 
 .popUpDiv>form>.formContent>.passDiv>.d1>input {
-    width: 230px;
+    width: 517px;
     height: 30px;
     border-radius: 10px;
     border-style: none;
@@ -173,7 +142,7 @@ body {
     display: flex;
     text-align: center;
     color: #404040;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .popUpDiv>form>.formContent>.termsDiv>input {
@@ -194,7 +163,7 @@ body {
     border-style: none;
     background-color: #880808;
     color: white;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .popUpDiv>form>.signInP {
