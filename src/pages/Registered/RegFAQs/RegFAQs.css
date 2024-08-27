@@ -1,0 +1,32 @@
+/* outer div */
+.FAQsDiv1 {
+    display: flex;
+    flex-direction: row;
+}
+
+/* dashboard div */
+.FAQsDiv1-1 {
+    height: 100vh;
+    width: 370px;
+    background-color: white;
+}
+
+/* profile, FAQsContent, and contact */
+.FAQsDiv1-2 {
+    width: 200vh;
+}
+
+/* profile div */
+.FAQsDiv1-2-1 {
+    height: 20%;
+}
+
+/* FAQsContent div */
+.FAQsDiv1-2-2 {
+    height: 60%;
+}
+
+/* contact div */
+.FAQsDiv1-2-3 {
+    height: 20%;
+}

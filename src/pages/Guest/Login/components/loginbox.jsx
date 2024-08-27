@@ -25,7 +25,7 @@ export default function PopUp() {
                         <input type="checkbox" name="agree" id="agree" />
                         <label htmlFor="agree">I agree to the <a href="">Terms and Conditions</a></label><br />
                     </div>
-                    <button className="submit" name="submit" id="submit"><Link className="removeDeco" to="/login">Login</Link></button>
+                    <button className="submit" name="submit" id="submit"><Link className="removeDeco white" to="/regdashboard">Login</Link></button>
                 </div>
                 <p className="signInP">Don't have an account? <Link className="removeDeco" to="/signup">Sign-up</Link></p>
             </form>

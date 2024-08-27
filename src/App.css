@@ -1,6 +1,13 @@
 /* REUSABLES */
 .removeDeco {
   text-decoration: none;
+}
+
+.black {
+  color: black;
+}
+
+.white {
   color: white;
 }
 
